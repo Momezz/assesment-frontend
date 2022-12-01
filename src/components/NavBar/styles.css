@@ -1,0 +1,17 @@
+.navigation__card{
+  background-color: #333652;
+}
+
+.navigation__ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 80px;
+}
+
+.navigation__text{
+  text-decoration: none;
+  color: #FAD02C;
+  font-weight: 600;
+}

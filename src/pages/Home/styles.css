@@ -1,0 +1,9 @@
+.home__grid{
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+

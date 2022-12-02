@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import NavBar from '../NavBar/NavBar';
 import { getProduct } from '../../services/productos';
 import './styles.css';
 
@@ -20,6 +21,9 @@ const SeeDetails = () => {
   }, [id]);
   return (
     <div>
+      <nav>
+        <NavBar />
+      </nav>
       {
         product
           ? (

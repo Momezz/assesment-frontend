@@ -19,7 +19,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <nav>
+      <nav className="home__nav-bar">
         <NavBar />
       </nav>
       <section className="home__grid">

@@ -1,4 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .home__grid{
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -7,3 +13,7 @@
   width: 100%;
 }
 
+.home__nav-bar{
+  width: 100%;
+  background-color: red;
+}

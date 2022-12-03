@@ -1,5 +1,11 @@
 export const getAllProducts = async () => {
-  const res = await fetch('https://fakestoreapi.com/products');
+  const options = {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+  const res = await fetch('https://fakestoreapi.com/products', options);
   const result = await res.json();
   return result;
 };

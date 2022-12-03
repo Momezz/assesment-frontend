@@ -18,8 +18,9 @@
   width: 95px;
 }
 
-.product__description{
+.product__title{
   font-weight: 600;
+  margin-bottom: 15px;
   font-size: 13px;
 }
 
@@ -38,25 +39,33 @@
   background-color: #65a5dd;
   border-radius: 7px;
   color: white;
+  width: 90px;
+  font-weight: 600;
   border: none;
   height: 26px;
+}
+
+.product__btn:hover{
+  background-color: #388ad3;
 }
 
 .product__btn--disabled{
   background-color: #a4c9e7;
   border-radius: 7px;
   color: white;
+  width: 90px;
+  font-weight: 600;
   border: none;
   height: 26px;
 }
 
 .product__clock{
   border: 1px solid gray;
-  width: 70px;
-  display: flex;
   justify-content: center;
-  font-size: 16px;
-  height: 25px;
-  border-radius: 5px;
   align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  height: 25px;
+  width: 70px;
 }

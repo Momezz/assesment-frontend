@@ -11,7 +11,7 @@ const NavigationBar = () => (
         <Link className="navigation__text" to="/about">ABOUT</Link>
       </li>
       <li className="navigation__menu-li">
-        <Link className="navigation__text" to="/questions">QUESTIONS</Link>
+        <Link className="navigation__text" to="/answers">ANSWERS</Link>
       </li>
     </ul>
   </nav>

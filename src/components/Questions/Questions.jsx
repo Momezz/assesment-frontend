@@ -1,10 +1,12 @@
+import './styles.css';
+
 const Questions = () => (
-  <div>
-    <h1>
+  <div className="questions__container">
+    <h1 className="questions__title">
       Preguntas
     </h1>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
       </p>
       <p>
@@ -21,7 +23,7 @@ const Questions = () => (
         backlog actualizado para que el equipo de desarrollo se encargue de estimarlo.
       </p>
     </div>
-    <div>
+    <div className="question__item">
       <h2>
         2. Daily Scrum
       </h2>
@@ -34,7 +36,7 @@ const Questions = () => (
         -¿Tengo algun impedimento para la entrega?
       </p>
     </div>
-    <div>
+    <div className="question__item">
       <h2>3. Sprint Review</h2>
       <p>
         Reunion organizada por el product owner al final de cada sprint para estudiar cual
@@ -42,7 +44,7 @@ const Questions = () => (
         condiciones que puedan afectar el negocio.
       </p>
     </div>
-    <div>
+    <div className="question__item">
       <h2>
         4. Sprint Retrospective
       </h2>
@@ -51,7 +53,7 @@ const Questions = () => (
         identificar posibles mejoras para el próximo
       </p>
     </div>
-    <div>
+    <div className="question__item">
       <h2>
         5. Sprint Grooming o Refinement
       </h2>
@@ -61,8 +63,8 @@ const Questions = () => (
         y dirigir esta reunion
       </p>
     </div>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
       </p>
       <p>
@@ -73,8 +75,8 @@ const Questions = () => (
         esquelética de un sitio web. Algunas herramientas que podemos utilizar son Adobe XD o Axure
       </p>
     </div>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
       </p>
       <p>
@@ -90,19 +92,19 @@ const Questions = () => (
         apuntando a la misma dirección de memoria
       </p>
     </div>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva
         rama llamada rama-1?
       </p>
       <ul>
-        <li>git branch rama-1</li>
-        <li>git checkout rama-1</li>
-        <li>git checkout -b rama-1</li>
+        <li className="question__li">git branch rama-1</li>
+        <li className="question__li">git checkout rama-1</li>
+        <li className="question__li">git checkout -b rama-1</li>
       </ul>
     </div>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         Explicar la diferencia entre git merge y git rebase.
       </p>
       <p>
@@ -113,8 +115,8 @@ const Questions = () => (
         haciendo que la solución de conflictos sea un poco más compliada
       </p>
     </div>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
       </p>
       <p>
@@ -123,8 +125,8 @@ const Questions = () => (
         esperar a que el dueño de ese repositorio los extraiga al suyo.
       </p>
     </div>
-    <div>
-      <p>
+    <div className="question__item">
+      <p className="question__ask">
         ¿Qué es el Virtual DOM?
       </p>
       <p>

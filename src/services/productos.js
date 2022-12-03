@@ -21,5 +21,3 @@ export const generateTime = (min, max) => {
   const maxi = Math.floor(max);
   return Math.floor(Math.random() * (maxi - mini + 1) + mini);
 };
-
-export default getAllProducts;

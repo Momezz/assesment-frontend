@@ -4,10 +4,10 @@
 }
 
 .navigation__ul{
-  display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  display: flex;
   height: 80px;
 }
 

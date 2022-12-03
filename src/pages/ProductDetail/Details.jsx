@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import NavBar from '../NavBar/NavBar';
 import { getProduct } from '../../services/productos';
+import NavBar from '../../components/NavBar/NavBar';
 import './styles.css';
 
-const SeeDetails = () => {
+const Details = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
@@ -37,6 +37,8 @@ const SeeDetails = () => {
                 <span><strong className="see-detail__item">Price:</strong>{product.price}</span>
                 <p><strong className="see-detail__item">Description:</strong> {product.description}</p>
                 <span><strong className="see-detail__item">Category:</strong> {product.category}</span>
+                <span><strong className="see-detail__item">Rating</strong>Rate: {product.rating.rate}</span>
+                <span>Count: {product.rating.count}</span>
                 <Link className="see-detail__link" to="/">Regresar a la página principal</Link>
               </div>
             </article>
@@ -48,4 +50,4 @@ const SeeDetails = () => {
   );
 };
 
-export default SeeDetails;
+export default Details;

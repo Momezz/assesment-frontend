@@ -1,0 +1,40 @@
+.questions__container{
+  background-color: rgb(243, 241, 241);
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Solway', serif;
+  flex-direction: column;
+  max-width: 1000px;
+  color: #333652;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 12px;
+  display: flex;
+  width: 90%;
+}
+
+.questions__title{
+  background-color: rgb(243, 241, 241);
+  justify-items: center;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  color: #194149;
+  margin: 0 auto;
+}
+
+.question__item{
+  margin-top: 7px;
+  padding: 5px;
+}
+
+.question__ask{
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.question__li{
+  text-decoration: none;
+  list-style: none;
+}

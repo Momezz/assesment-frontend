@@ -7,7 +7,7 @@ const Information = () => (
     <div className="info__image">
       <img className="info__img" src={image} alt="" />
     </div>
-    <p className="info__paragraph">
+    <p>
       Soy un hombre de 36 años de carácter amable, muy profesional y comprometido con lo que hago.
       Hace poco tiempo encontré en la programación una gran pasión, gracias a
       ella tengo una necesidad constante por aprender nuevas tecnologias y siempre estoy
@@ -17,19 +17,19 @@ const Information = () => (
       programa
     </p>
     <h2 className="info__caption">Lo aprendido</h2>
-    <p className="info__paragraph">En este programa he aprendido muchas cosas y he tenido que recordar algunas
+    <p>En este programa he aprendido muchas cosas y he tenido que recordar algunas
       otras que tenia en el olvido. Pero las tres cosas más importantes que he aprendido son:
     </p>
     <ol>
       <li className="info__item">
-        Además de fortalecer mis habilidades duras debo trabajar a la par mis habilidades blandas.
-        Estas siempre se pueden mejorar
+        1. Además de fortalecer mis habilidades duras debo trabajar a la par mis habilidades
+        blandas. Estas siempre se pueden mejorar
       </li>
       <li className="info__item">
-        Uso de props y su importancia
+        2. Uso de props y su importancia
       </li>
       <li className="info__item">
-        desarrollar componentes funcionales con estado y ciclo de vida
+        3. desarrollar componentes funcionales con estado y ciclo de vida
       </li>
     </ol>
     <div className="info__contact">

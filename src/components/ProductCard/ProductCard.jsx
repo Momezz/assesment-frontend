@@ -8,7 +8,7 @@ const ProductCard = ({
   title, image, id,
 }) => {
   const navigate = useNavigate();
-  const [mins, setMinutes] = useState(generateTime(0, 2));
+  const [mins, setMinutes] = useState(generateTime(0, 5));
   const [secs, setSeconds] = useState(generateTime(0, 60));
   useEffect(() => {
     const sampleInterval = setInterval(() => {
@@ -28,9 +28,9 @@ const ProductCard = ({
       clearInterval(sampleInterval);
     };
   });
-  // eslint-disable-next-line no-shadow
-  const handelClick = (id) => {
-    navigate(`/details/${id}`);
+
+  const handelClick = (_id) => {
+    navigate(`/details/${_id}`);
   };
   return (
     <article className="product__card">
@@ -43,7 +43,7 @@ const ProductCard = ({
           {!(mins && secs) ? `00:00:${secs}` : (
             <p>
               {' '}
-              {mins < 10 ? `0:0${mins}` : mins} : {secs < 10 ? `${secs}` : `${secs}`}
+              {mins < 10 ? `00:0${mins}` : mins} : {secs < 10 || !secs ? ` 0${secs}` : `${secs}`}
               {' '}
             </p>
           )}

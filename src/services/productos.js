@@ -1,3 +1,5 @@
+const BASE_URL = process.env.REACT_APP_API_URL;
+
 export const getAllProducts = async () => {
   const options = {
     method: 'GET',
@@ -5,13 +7,13 @@ export const getAllProducts = async () => {
       'Content-Type': 'application/json',
     },
   };
-  const res = await fetch('https://fakestoreapi.com/products', options);
+  const res = await fetch(`${BASE_URL}/products`, options);
   const result = await res.json();
   return result;
 };
 
 export const getProduct = async (id) => {
-  const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+  const res = await fetch(`${BASE_URL}/products/${id}`);
   const result = await res.json();
   return result;
 };

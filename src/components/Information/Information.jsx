@@ -1,11 +1,10 @@
-import image from '../../assets/description.JPG';
 import './styles.css';
 
 const Information = () => (
   <div className="info__container">
     <h1 className="info__title">JULIAN GOMEZ MEJIA</h1>
     <div className="info__image">
-      <img className="info__img" src={image} alt="" />
+      <img className="info__img" src="assets/description.JPG" alt="" />
     </div>
     <p>
       Soy un hombre de 36 años de carácter amable, muy profesional y comprometido con lo que hago.
@@ -33,7 +32,7 @@ const Information = () => (
       </li>
     </ol>
     <div className="info__contact">
-      <p><a className="info__link" href="mailto:julgomez14@gmail.com">julgomez14@gmail</a></p>
+      <p><a className="info__link" href="mailto:julgomez14@gmail.com">julgomez14@gmail.com</a></p>
       <p><a className="info__link" href="https://github.com/Momezz">Git hub</a></p>
     </div>
   </div>

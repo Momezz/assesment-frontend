@@ -9,7 +9,7 @@ const ProductCard = ({
 }) => {
   const navigate = useNavigate();
   const [mins, setMinutes] = useState(generateTime(0, 5));
-  const [secs, setSeconds] = useState(generateTime(0, 60));
+  const [secs, setSeconds] = useState(generateTime(0, 59));
   useEffect(() => {
     const sampleInterval = setInterval(() => {
       if (secs > 0) {
@@ -40,36 +40,22 @@ const ProductCard = ({
       <p className="product__title">{title}</p>
       <div className="product__elements">
         <div className="product__clock">
-          {!(mins && secs) ? `00:00:${secs}` : (
+          {!(mins || secs) ? `00:00:0${secs}` : (
             <p>
               {' '}
-              {mins < 10 ? `00:0${mins}` : mins} : {secs < 10 || !secs ? ` 0${secs}` : `${secs}`}
+              {mins < 10 ? `00:0${mins}` : mins} : {secs < 10 || !secs ? `0${secs}` : `${secs}`}
               {' '}
             </p>
           )}
         </div>
         <div>
-          {
-            secs > 0 || mins > 0
-              ? (
-                <button
-                  className="product__btn"
-                  onClick={() => { handelClick(id); }}
-                  type="button"
-                >
-                  Go To Detail
-                </button>
-              ) : (
-                <button
-                  className="product__btn--disabled"
-                  onClick={() => { handelClick(id); }}
-                  type="button"
-                  disabled
-                >
-                  Go To Detail
-                </button>
-              )
-          }
+          <button
+            className={`container ${secs > 0 || mins > 0 ? 'product__btn' : 'product__btn--disabled '}`}
+            onClick={() => { handelClick(id); }}
+            type="button"
+          >
+            Go To Detail
+          </button>
         </div>
       </div>
     </article>
